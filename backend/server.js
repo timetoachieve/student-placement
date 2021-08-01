@@ -1,6 +1,6 @@
 import express from 'express';
 import data from './data.js';
-
+require("./db/conn");
 const app = express();
 
 app.get('/api/companies', (req, res) => {    
